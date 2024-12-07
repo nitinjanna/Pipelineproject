@@ -18,4 +18,9 @@ pipeline
             }
         }
     }
+    post
+    {
+        failure 
+        mail bcc: '', body: 'Build falled to package', cc: '', from: '', replyTo: '', subject: 'Build fail', to: 'nitinjanna19@gmail.com'    
+    }
 }
