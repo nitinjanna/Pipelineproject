@@ -1,0 +1,14 @@
+pipeline
+{
+    agent any 
+    stages
+    {
+        stage("count_download")
+        {
+            steps
+            {
+                git branch: 'main', url: 'https://github.com/nitinjanna/Newproject2.git'
+            }
+        }
+    }
+}
