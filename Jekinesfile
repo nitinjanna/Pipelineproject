@@ -10,5 +10,12 @@ pipeline
                 git branch: 'main', url: 'https://github.com/nitinjanna/Pipelineproject.git'
             }
         }
+         stage("count_Build")
+        {
+            steps
+            {
+                sh 'mvn package'
+            }
+        }
     }
 }
